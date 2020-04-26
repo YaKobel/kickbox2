@@ -28,7 +28,7 @@ def contact(request):
             message_name,  # subject
             message,  # message
             message_email,  # from email
-            ['ourfront1@gmail.com'],  # To Email
+            ['kickboxua@gmail.com'],  # To Email
             )
 
         return render(request, 'contact.html', {'message_name': message_name})
@@ -156,7 +156,7 @@ def appointment(request):
             'Appointment Request',  # subject
             appointment,  # message
             your_email,  # from email
-            ['ourfront1@gmail.com'],  # To Email
+            ['kickboxua@gmail.com'],  # To Email
         )
 
         return render(request, 'appointment.html', {
