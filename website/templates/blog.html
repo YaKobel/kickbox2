@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Новини Луцька Міська Федирація Кікбосингу WAKO{%endblock %}
+{% block meta_description %} Волинська Обласна Федерація Боксу та Кікбоксингу {% endblock %}
+
+{% block content %}
+
+
+
+  <!-- ***** Breadcrumb Area Start ***** -->
+  <div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg-img/12.jpg' %});">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-12">
+          <h2 class="title">Новини</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="breadcumb--con">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#"><i class="fa fa-home"></i>Головна</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Новини</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Breadcrumb Area End ***** -->
+
+
+
+
+  {% for post in news %}
+  <div class="container">
+    <div class="alert alert-light">
+      <h2>{{ post.title }}</h2>
+      <p>{{ post.text|striptags|truncatechars:250 }}</p>
+      <div class=row>
+        <div>
+          {% if post.avtor.profile.img %}
+            <img src="{{ post.avtor.profile.img.url }}" alt="{{ post.avtor }}" class="user_image">
+          {% else %}
+             <img src="media/default.jpg" alt="{{ post.avtor }}" class="user_image">
+          {% endif %}
+        </div>
+        <div class="mt-2">
+          <span class="text-muted"> <b>Дата:</b> {{ post.date|date:"d E Y в H:i"  }}</span>
+          <p><b>Автор: </b><a href="{% url 'user-news' post.avtor %}">{{ post.avtor }}</a></p>
+        </div>
+      </div>
+      <a href="{% url 'news-detail' post.id %}" class="btn btn-outline-warning">Читать далее</a>
+    </div>
+  </div>
+  {% endfor %}
+
+  <div class="container mb-4">
+     {% if is_paginated %}
+        {% if page_obj.has_previous %}
+            <a href="blog.html" class="btn btn-outline-warning">Начало</a>
+            <a href="?page={{ page_obj.previous_page_number }}" class="btn btn-outline-warning">Предыдущая</a>
+        {% endif %}
+
+        <!--  Начало Предыдущая 2 3 4 5 6   Следующая  Последняя -->
+        {% for num in page_obj.paginator.page_range %}
+            {% if num == page_obj.number %}
+                <button class="btn btn-warning">{{ num }}</button>
+            {% elif num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
+            <a href="?page={{ num }}" class="btn btn-outline-warning">{{ num }}</a>
+            {% endif %}
+        {% endfor %}
+
+        {% if page_obj.has_next %}
+            <a href="?page={{ page_obj.next_page_number }}" class="btn btn-outline-warning">Следующая</a>
+            <a href="?page={{ page_obj.paginator.num_pages }}" class="btn btn-outline-warning">Последняя</a>
+        {% endif %}
+
+    {% endif %}
+  </div>
+
+
+
+
+
+<!--{% block aside_news_section %}-->
+<!--    <h5><b>10 фильмов про спорт</b></h5>-->
+<!--    <img src="http://fitnessguide.pro/wp-content/uploads/bfi_thumb/49-mwh9zkbd858myg1m94e9khs7fet1k2olfc3uw2xwck.jpg" class="img-thumbnail md-1">-->
+<!--    <p> Ничто так не закаляет силу духа и волю к победе, как спорт. Именно там царят нешуточные страсти и мощные конфликты, поэтому с самого начала ...-->
+<!--    </p>-->
+<!--    <a href="" target="_blank">-->
+<!--        <button class="btn btn-warning">Посмотреть</button>-->
+<!--    </a>-->
+<!--{% endblock aside_news_section %}-->
+
+{% endblock %}
+

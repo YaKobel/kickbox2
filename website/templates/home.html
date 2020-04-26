@@ -1,0 +1,620 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+
+{% block content %}
+
+
+
+  <!-- ***** Welcome Area Start ***** -->
+  <section class="welcome-area">
+    <!-- Welcome Slides -->
+    <div class="welcome-slides owl-carousel">
+      <!-- Single Welcome Slide -->
+      <div class="welcome-welcome-slide bg-img bg-gradient-overlay jarallax" style="background-image: url({% static 'website/img/bg-img/1.jpg' %});">
+        <div class="container h-100">
+          <div class="row h-100 align-items-center">
+            <div class="col-12">
+              <!-- Welcome Text -->
+              <div class="welcome-text text-center">
+                <h2 data-animation="fadeInUp" data-delay="100ms">Про спорт від успішних жінок</h2>
+                <p data-animation="fadeInUp" data-delay="300ms">«Виходячи на майданчик, я не звертаю уваги, хто моя суперниця. Хоч я і поважаю кожного противника, але єдине моє бажання - перемогти »
+                  Якщо ви починаєте виступ на турнірі, думаючи, що його виграє хтось інший, у вас серйозна проблема.</p>
+                <div class="welcome-btn-group">
+<!--                  <a href="{% url 'contact' %}" class="btn dento-btn mx-2" data-animation="fadeInUp" data-delay="500ms">Get Started</a>-->
+                  <a href="{% url 'contact' %}" class="btn dento-btn mx-2 active" data-animation="fadeInUp" data-delay="700ms">Контакти</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Single Welcome Slide -->
+      <div class="welcome-welcome-slide bg-img bg-gradient-overlay jarallax" style="background-image: url({% static 'website/img/bg-img/2.jpg' %});">
+        <div class="container h-100">
+          <div class="row h-100 align-items-center">
+            <div class="col-12">
+              <!-- Welcome Text -->
+              <div class="welcome-text text-center">
+                <h2 data-animation="fadeInDown" data-delay="100ms">Про спорт від успішних чоловіків</h2>
+                <p data-animation="fadeInDown" data-delay="300ms">Тріумф же не дав би справжньою сили, її формує боротьба. Боротьба з сумнівами, страхами, лінню. Борись і не здавайся і знайдеш силу</p>
+                <div class="welcome-btn-group">
+<!--                  <a href="#" class="btn dento-btn mx-2" data-animation="fadeInDown" data-delay="500ms">Звязок</a>-->
+                  <a href="{% url 'contact' %}" class="btn dento-btn mx-2 active" data-animation="fadeInDown" data-delay="700ms">Контакти</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ***** Welcome Area End ***** -->
+
+<!-- Boxer History Area Start -->
+  <section class="dento-pricing-table-area section-padding-100-50">
+    <div class="container">
+      <div class="row">
+        <!-- Section Heading -->
+        <div class="col-12">
+          <div class="section-heading text-center">
+            <h2>Кращі спортсмени федерації кікбоксингу Волині</h2>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+
+              <div class="row">
+          <div class="col-12">
+            <div class="dento-price-table table-responsive">
+              <table class="table table-borderless mb-0">
+                <thead>
+                  <tr>
+                    <th scope="col">Cпортсмени</th>
+                    <th scope="col">Досягнення та Перемоги</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+
+                  <tr>
+                    <th scope="row">Кобель Дмитро (ЗМС України з кікбоксингу ВТКА) член збірної України</th>
+                    <td>переможець і фіналіст Юнацьких і Молодіжних ігор України 2005,2006 р. Неодноразовий чемпіон і призер чемпіонатів і Кубків України 2005-2011 р. Призер Кубка Світу 2009 р. Неодноразовий чемпіон і призер чемпіонатів і Кубків України з кікбоксингу ВТКА 2014р. Чемпіон Світу кікбоксингу ВТКА 2014 (Італія) 1м (золото) К-1лайт-74 кг., 2м.(срібло) Кік/лайт - 74 кг. 3м(бронза) Лайт/контакт-74кг. Виконання нормативу Майстер Спорта Міжнародного Класу України з кікбоксингу ВТКА.
+Чемпіон Світу кікбоксингу ВТКА 2015 (Іспанія) 1м (золото) К-1лайт-79 кг., 1м.(золото) Кік/лайт - 79 кг. 2м(срібло) Лайт/контакт-79кг.  Виконання нормативу Заслужений Майстер Спорта  України з кікбоксингу ВТКА</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">Швайко Іван (МСМК України з кікбоксингу ВТКА) член збірної України</th>
+                    <td>чемпіон України і Кубка України 2006-2011 р., чемпіон Кубку Світу 2006, 2007, 2011 року. Чемпіон Кубка Європи 2012 (м.Київ) Чемпіон Світу з кікбоксингу ВТКА 2013 (Італія) 1м(золото) лайт/контакт +94кг, 1м(золото) лайт/контакт +94кг, 2м(срібло) фул/контакт +91кг, Чемпіонат Світу ВТКА 2014 -2м(срібло) кік/лайт +94кг, 2м.(срібло) лайт/контакт +94кг
+МС України з боксу.Член збірної України 2007-2008. ЧЕМПІОН Універсіади України 2007р. +91кг. Та Фіналіст Спортивних Ігор України 2007р. з боксу +91кг. Переможець і призер Міжнародних турнірів з боксу в Польщі, Германії, Росіїї, Білорусії. Провів 9 професіональних поєдинків - 9 перемог.</td>
+                  </tr>
+
+
+                  <tr>
+                    <th scope="row">Зубчук Юрій (МСМК) член збірної України</th>
+                    <td>чемпіон України і Кубка України 2009-2012 р., 2 місце чемпіонату світу 2011р.(Македонія).</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">Подвальний Андрій (МСУ) член збірної України </th>
+                    <td>переможець і фіналіст Юнацьких і Молодіжних ігор України 2005,2006 р., неодноразовий чемпіон і призер чемпіонатів і Кубків України 2005-2011 р.</td>
+
+                  </tr>
+                  <tr>
+                    <th scope="row">Галейда Дмитро (МСУ) член збірної України</th>
+                    <td>чемпіон України і Кубка України 2005-2009 р., фіналіст і неодноразовий призер Кубку Світу 2006, 2007, 2008 р.</td>
+
+                  </tr>
+                  <tr>
+                    <th scope="row">Потапець Дмитро (МСУ) член збірної України</th>
+                    <td>чемпіон і призер чемпіонатів Кубку України 2009-2011 р.</td>
+
+                  </tr>
+                  <tr>
+                    <th scope="row">Бардась Денис (МСУ) член збірної України</th>
+                    <td>чемпіон і призер чемпіонатів Кубку України 2009-2011 р.</td>
+
+                  </tr>
+                  <tr>
+                    <th scope="row">Хильчук Юлія (МСУ) член збірної України</th>
+                    <td>чемпіон України і Кубка України 2009-2011р., призерка Кубку Світу 2009 р.</td>
+
+                  </tr>
+                  <tr>
+                    <th scope="row">Скоповський Володимир (КМС) член збірної України</th>
+                    <td>чемпіон і призер чемпіонатів Кубку України 2008-2011 р.</td>
+
+                  </tr>
+                  <tr>
+                    <th scope="row">Миронович Сергій (КМС) резерв збірної України</th>
+                    <td>чемпіон і призер чемпіонатів Кубку України 2009-2011 р. Чемпіони і призери Чемпіонатів і Кубків України 2008-2011 р. </td>
+
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- Boxer History Area End -->
+
+
+
+  <!-- ****** About Us Area Start ******* -->
+  <section class="dento-about-us-area section-padding-40-0">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- About Us Thumbnail -->
+        <div class="col-12 col-md-6">
+          <div class="about-us-thumbnail mb-50">
+            <img src="{% static 'website/img/bg-img/155s.jpg' %}" alt="">
+          </div>
+        </div>
+        <!-- About Content -->
+        <div class="col-12 col-md-6">
+          <div class="about-us-content mb-50">
+            <!-- Section Heading -->
+            <div class="section-heading">
+              <h4>Корні федерації кікбоксингу Волині</h4>
+              <div class="line"></div>
+            </div>
+             <p><b>молодь, юніори, юнаки:</b></p>
+            <p>Люклянчук Максим (КМС), Трофимчук Денис (КМС), Бондарук Юлія (КМС), Бірук Святослав (КМС), Бірук Станіслав (КМС), Квач Вікторія (КМС), Корецький Юрій (КМС), Ребрина Роман (КМС), Корольчук Володимир (КМС), Гнатенко Олександр (КМС), Мазурок Лена (КМС), Васькевич Світлана (КМС), Новосад Вадим (КМС), Токарський Василь (І р.), Завгородній Дмитро (Ір.)</p>
+            <p><b>Провідні тренери обласної федерації:</b></p>
+            <p>Кобель А.Д., Кобель Д.А. - КЗ ДЮСШ2 Луцької МіськРади.</p>
+            <p>Мордик М.Ю. -СК ВНУ м. Луцьк, Тимофєєв В.В. -ДЮСШ «Кондратовича» м. Ковель, Бродоса О.В. - ДЮСШ No. 3 м. Нововолинськ,
+              Смаль С.А. - СК «Удар» м. Любаша, Падзізей В.Г. - СК «Любарт» м. В-Волинський, Грабовський О.В. - Паувер атлетик м. Ківерці. Куць Д.Аю - Ст Заболоття С./К. «Брат». Гнатюк Віктор Миколайович с/к "Актив" Новолинськ.</p>
+
+
+<!--            &lt;!&ndash; Single Skills Area &ndash;&gt;-->
+<!--            <div class="single-skills-area mt-30">-->
+<!--              <h6>Experience Dentist</h6>-->
+<!--              <div id="bar1" class="barfiller">-->
+<!--                <span class="tip"></span>-->
+<!--                <span class="fill" data-percentage="80"></span>-->
+<!--              </div>-->
+<!--            </div>-->
+
+              <!-- Cool Facts Area Start -->
+  <section class="dento-cta-area">
+    <div class="container">
+      <div class="row">
+
+
+
+        <div class="col-12 col-sm-4 col-lg-4">
+          <div class="single-cta text-center mt-50 mb-20">
+            <i class="icon_heart_alt"></i>
+            <h2><span class="counter">50</span>+</h2>
+            <h5>Досвідчених Спортсменів</h5>
+          </div>
+        </div>
+
+
+        <div class="col-12 col-sm-4 col-lg-4">
+          <div class="single-cta text-center mt-50 mb-20">
+            <i class="icon_book_alt"></i>
+            <h2><span class="counter">13</span></h2>
+            <h5>Учасників Федерації</h5>
+          </div>
+        </div>
+
+
+        <div class="col-12 col-sm-4 col-lg-4">
+          <div class="single-cta text-center mt-50 mb-20">
+            <i class="icon_id"></i>
+            <h2><span class="counter">15</span>+</h2>
+            <h5>Досвідчених Тренерів</h5>
+          </div>
+        </div>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+ <!-- Dento Service Area Start -->
+  <section class="dento-service-area section-padding-100-0 bg-img bg-gradient-overlay jarallax clearfix" style="background-image: url('{% static 'website/img/bg-img/13.jpg' %}');">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Service Content -->
+        <div class="col-12 col-lg-6">
+          <div class="service-content mb-30">
+            <!-- Section Heading -->
+            <div class="section-heading white">
+              <h2>Чого ви навчитесь?</h2>
+              <div class="line"></div>
+            </div>
+
+            <div class="row">
+
+              <!-- Single Service -->
+              <div class="col-6 col-md-4">
+                <div class="single-service mb-70">
+                  <img src="{% static 'website/img/core-img/s14.png' %}" alt="">
+                  <h6>Постановка цілей, уміння перемагати</h6>
+                </div>
+              </div>
+
+              <!-- Single Service -->
+              <div class="col-6 col-md-4">
+                <div class="single-service mb-70">
+                  <img src="{% static 'website/img/core-img/s12.png' %}" alt="">
+                  <h6>Сила волі та контроль над собой</h6>
+                </div>
+              </div>
+
+                    <!-- Single Service -->
+              <div class="col-6 col-md-4">
+                <div class="single-service mb-70">
+                  <img src="{% static 'website/img/core-img/s9.png' %}" alt="">
+                  <h6>Ясне Бачення небезпечной ситуації</h6>
+                </div>
+              </div>
+
+              <!-- Single Service -->
+              <div class="col-6 col-md-4">
+                <div class="single-service mb-70">
+                  <img src="{% static 'website/img/core-img/s13.png' %}" alt="">
+                  <h6>Зміцните тіло, дух та характер</h6>
+                </div>
+              </div>
+
+
+              <!-- Single Service -->
+              <div class="col-6 col-md-4">
+                <div class="single-service mb-70">
+                  <img src="{% static 'website/img/core-img/s11.png' %}" alt="">
+                  <h6>Самозахист та вдосконалення</h6>
+                </div>
+              </div>
+
+
+              <!-- Single Service -->
+              <div class="col-6 col-md-4">
+                <div class="single-service mb-70">
+                  <img src="{% static 'website/img/core-img/s15.png' %}" alt="">
+                  <h6>Лідерство та робота в команді</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video Area -->
+        <div class="col-12 col-lg-6">
+          <div class="dento-video-area mb-100">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ebmJSsOz5AQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Dento Service Area End -->
+
+
+
+<!--  &lt;!&ndash; Оставть заявку Area Start &ndash;&gt;-->
+<!--  <section class="book-an-oppointment-area section-padding-100 bg-img bg-gradient-overlay jarallax clearfix" style="background-image: url('{% static 'website/img/bg-img/12.jpg' %}');">-->
+<!--    <div class="container">-->
+<!--      <div class="row">-->
+<!--        &lt;!&ndash; Section Heading &ndash;&gt;-->
+<!--        <div class="col-12">-->
+<!--          <div class="section-heading text-center white">-->
+<!--            <h2>Оставть заявку главная</h2>-->
+<!--            <div class="line"></div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+
+<!--      <div class="row">-->
+<!--        <div class="col-12">-->
+<!--          &lt;!&ndash; Appointment Form &ndash;&gt;-->
+<!--          <div class="appointment-form">-->
+<!--            <form action="{% url 'appointment' %}" method="post">-->
+<!--              {% csrf_token %}-->
+<!--              <div class="row">-->
+<!--                <div class="col-md-6">-->
+<!--                  <div class="form-group mb-30">-->
+<!--                    <input type="text" name="your-name" class="form-control" placeholder="Your Name" required>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--                <div class="col-md-6">-->
+<!--                  <div class="form-group mb-30">-->
+<!--                    <input type="text" name="your-phone" class="form-control" placeholder="Your Phone" required>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--                <div class="col-md-6">-->
+<!--                  <div class="form-group mb-30">-->
+<!--                    <input type="email" name="your-email" class="form-control" placeholder="Your Email" required>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--                <div class="col-md-6">-->
+<!--                  <div class="form-group mb-30">-->
+<!--                    <input type="text" name="your-address" class="form-control" placeholder="Your Address">-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--                <div class="col-md-6">-->
+<!--                  <div class="form-group mb-30">-->
+<!--                    <select name="your-schedule" class="form-control">-->
+<!--                      <option value="First Choice Appoinment Time">First Choice Appoinment Time</option>-->
+<!--                      <option value="9 AM to 10 AM">9 AM to 10 AM</option>-->
+<!--                      <option value="11 AM to 12 PM">11 AM to 12 PM</option>-->
+<!--                      <option value="2 PM to 4 PM">2 PM to 4 PM</option>-->
+<!--                      <option value="8 PM to 10 PM">8 PM to 10 PM</option>-->
+<!--                    </select>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--                <div class="col-md-6">-->
+<!--                  <div class="form-group mb-30">-->
+<!--                    <select name="your-date" class="form-control">-->
+<!--                      <option value="Choose Your Date">Choose Your Date</option>-->
+<!--                      <option value="Monday">Monday</option>-->
+<!--                      <option value="Tuesday">Tuesday</option>-->
+<!--                      <option value="Wednesday">Wednesday</option>-->
+<!--                      <option value="Thursday">Thursday</option>-->
+<!--                      <option value="Friday">Friday</option>-->
+<!--                    </select>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--                <div class="col-12">-->
+<!--                  <div class="form-group mb-30">-->
+<!--                    <textarea name="your-message" class="form-control" placeholder="Your Message"></textarea>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--                <div class="col-12 text-center">-->
+<!--                  <button type="submit" class="btn dento-btn">Booking Now</button>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </form>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </section>-->
+<!--  &lt;!&ndash; Book An Oppointment Area End &ndash;&gt;-->
+
+
+  <!-- ***** Dento Dentist Area Start ***** -->
+  <section class="dentist-area section-padding-100-0">
+    <div class="container">
+      <div class="row">
+        <!-- Section Heading -->
+        <div class="col-12">
+          <div class="section-heading text-center">
+            <h2>Цікаві Люди</h2>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- Single Dentist Area -->
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="single-dentist-area mb-100">
+            <img src="{% static 'website/img/bg-img/f1.png' %}" alt="">
+            <!-- Dentist Content -->
+            <div class="dentist-content">
+              <!-- Social Info -->
+              <div class="dentist-social-info">
+                <a href="https://www.facebook.com/profile.php?id=100025322042908"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+              </div>
+              <!-- Dentist Info -->
+              <div class="dentist-info bg-gradient-overlay">
+                <h5>Кобель Анатолій</h5>
+                <p>МС з боксу</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single Dentist Area -->
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="single-dentist-area mb-100">
+            <img src="{% static 'website/img/bg-img/10.png' %}" alt="">
+            <!-- Dentist Content -->
+            <div class="dentist-content">
+              <!-- Social Info -->
+              <div class="dentist-social-info">
+                <a href="https://www.facebook.com/profile.php?id=100007432418256"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+              </div>
+              <!-- Dentist Info -->
+              <div class="dentist-info bg-gradient-overlay">
+                <h5>Кобель Дмитро</h5>
+                <p>ЗМСУ з кікбоксингу WTKA</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single Dentist Area -->
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="single-dentist-area mb-100">
+            <img src="{% static 'website/img/bg-img/f3.png' %}" alt="">
+            <!-- Dentist Content -->
+            <div class="dentist-content">
+              <!-- Social Info -->
+              <div class="dentist-social-info">
+                <a href="https://www.facebook.com/profile.php?id=100008026146922"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+              </div>
+              <!-- Dentist Info -->
+              <div class="dentist-info bg-gradient-overlay">
+                <h5>Іваницький Григорій</h5>
+                <p>МС з боксу</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ***** Dento Dentist Area End ***** -->
+
+  <!-- ***** Testimonials Area Start ***** -->
+  <section class="testimonials-area section-padding-100 bg-img bg-gradient-overlay jarallax clearfix" style="background-image: url('{% static 'website/img/bg-img/7.jpg' %}');">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <!-- Testimonials Slides -->
+          <div class="testimonials-slides owl-carousel">
+            <!-- Single Testimonials Slide -->
+            <div class="single-testimonial-slide d-flex align-items-center">
+              <!-- Thumbnail -->
+              <div class="testimonial-thumb">
+                <img src="{% static 'website/img/bg-img/b1.jpg' %}" alt="">
+              </div>
+              <!-- Content -->
+              <div class="testimonial-content">
+                <h5>“Тренер завжди говорив мені: «Ти повинен перемагати всіх, ти в змозі зробити це, але що станеться, коли поб'ють тебе, чи зможеш ти впоратися з цим?». І я знаю, що можу” <p>Майк Тайсон</p></h5>
+                <h6>Швайко Іван</h6>
+                <p>МС України з боксу, МСМКУ з кікбоксингу WTKA</p>
+              </div>
+            </div>
+
+            <!-- Single Testimonials Slide -->
+            <div class="single-testimonial-slide d-flex align-items-center">
+              <!-- Thumbnail -->
+              <div class="testimonial-thumb">
+                <img src="{% static 'website/img/bg-img/b2.jpg' %}" alt="">
+              </div>
+              <!-- Content -->
+              <div class="testimonial-content">
+                <h5>“- Без дисципліни не має значення, наскільки ти хороший. Без дисципліни ти ніщо. Коли-небудь ти зустрінеш крутого хлопця, який витримає всі твої найкращі удари і буде продовжувати наступати. Пам'ятай про це і не втрачай силу духу і мужності. Це час, коли дисципліна вступає в гру” <p>Майк Тайсон</p></h5>
+                <h6>Бардась Денис</h6>
+                <p>МС України з боксу</p>
+              </div>
+            </div>
+
+              <!-- Single Testimonials Slide -->
+            <div class="single-testimonial-slide d-flex align-items-center">
+              <!-- Thumbnail -->
+              <div class="testimonial-thumb">
+                <img src="{% static 'website/img/bg-img/b3.jpg' %}" alt="">
+              </div>
+              <!-- Content -->
+              <div class="testimonial-content">
+                <h5>“Найважчий поєдинок - це коли за щастя доводиться боротися з лінню.
+                  <p>Мохаммед Алі”</p></h5>
+                <h6>Кобель Дмитро</h6>
+                <p>ЗМСУ з кікбоксингу WTKA</p>
+              </div>
+            </div>
+
+               <!-- Single Testimonials Slide -->
+            <div class="single-testimonial-slide d-flex align-items-center">
+              <!-- Thumbnail -->
+              <div class="testimonial-thumb">
+                <img src="{% static 'website/img/bg-img/b4.jpg' %}" alt="">
+              </div>
+              <!-- Content -->
+              <div class="testimonial-content">
+                <h5>“Програний бій завжди дає тобі зрозуміти, що щось ти робиш неправильно”. <p>Костя Цзю</p></h5>
+                <h6>Возняк Ольга</h6>
+                <p>МС України з боксу та КМС з кікбоксингу</p>
+              </div>
+            </div>
+
+            <!-- Single Testimonials Slide -->
+            <div class="single-testimonial-slide d-flex align-items-center">
+              <!-- Thumbnail -->
+              <div class="testimonial-thumb">
+                <img src="{% static 'website/img/bg-img/b5.jpg' %}" alt="">
+              </div>
+              <!-- Content -->
+              <div class="testimonial-content">
+                <h5>“- Коли спортсмен намагається піти непереможеним, хоча ще може щось дати спорту і людям, - він відступає. Зовні це мужність - пішов у розквіті сил, але по суті - боягузтво; боїться програти.”<p>Лариса Латиніна</p></h5>
+                <h6>Хильчук Юлія</h6>
+                <p>МС України з кікбоксингу</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ***** Testimonials Area End ***** -->
+
+  <!-- ***** Blog Area Start ***** -->
+  <section class="dento-blog-area section-padding-100-0 clearfix">
+    <div class="container">
+      <div class="row">
+        <!-- Section Heading -->
+        <div class="col-12">
+          <div class="section-heading text-center">
+            <h2>Фільми про спорт на реальних подіях</h2>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- Single Blog Item -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="single-blog-item mb-100">
+            <a href="./blog-details.html">
+              <img src="{% static 'website/img/bg-img/4.jpg' %}" alt="">
+            </a>
+            <!-- Blog Content -->
+            <div class="blog-content">
+              <a href="http://baskino.me/films/dramy/718-malyshka-na-million.html" class="post-title">Малишка на милліон</a>
+              <p>Тренер з боксу Френк Данн переживає не кращі часи. Через складні відносин з своєю дочкою він довгий час не дозволяв собі прив'язуватися до кого-небудь, боячись знову пережити втрату. Проте все міняється, коли в його тренувальному залі з'являється Мегі. Існуючи в постійній боротьбі з ...</p>
+              <div class="post-meta">
+                <a href="#"><i class="icon_clock_alt"></i> 28 Вер 2019</a>
+                <a href="#"><i class="icon_chat_alt"></i> 0 Коментарів</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single Blog Item -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="single-blog-item mb-100">
+            <a href="http://baskino.me/films/dramy/1854-mirnyy-voin.html">
+              <img src="{% static 'website/img/bg-img/5.jpg' %}" alt="">
+            </a>
+            <!-- Blog Content -->
+            <div class="blog-content">
+              <a href="http://baskino.me/films/dramy/1854-mirnyy-voin.html" class="post-title">Мирний воїн</a>
+              <p>Ден Міллмен вчиться в коледжі, він найталановитіший гімнаст в навчальному закладі, а його мрією є виступ на Олімпійських іграх. Він цілком успішний у всьому, у нього є і друзі і гроші, а так же галасливі вечірки, дівчата і слава. Але весь його світ перевертається після серйозної спортивної травми ...</p>
+              <div class="post-meta">
+                <a href="#"><i class="icon_clock_alt"></i> 28 Вер 2019</a>
+                <a href="#"><i class="icon_chat_alt"></i> 0 Коментарів</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single Blog Item -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="single-blog-item mb-100">
+            <a href="http://baskino.me/films/dramy/744-trener-karter.html">
+              <img src="{% static 'website/img/bg-img/6.jpg' %}" alt="">
+            </a>
+            <!-- Blog Content -->
+            <div class="blog-content">
+              <a href="http://baskino.me/films/dramy/744-trener-karter.html" class="post-title">Тренер Картер</a>
+              <p>
+Колишній баскетболіст Кен Картер, працює тренером у шкільній команді Річмонда. Баскетбольна команда завдяки професіоналізму і зусиллям тренера, не відчувала поразки на матчах. Але через тренування успішність гравців в школі знизилася. Картеру довелося припинити заняття, і команда почала пропускати матчі ...</p>
+              <div class="post-meta">
+                <a href="#"><i class="icon_clock_alt"></i> 28 Вер 2019</a>
+                <a href="#"><i class="icon_chat_alt"></i> 0 Коментарів</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ***** Blog Area End ***** -->
+
+ 
+ {% endblock %}

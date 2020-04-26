@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}About Dr. John Elder Dentist To The Stars{%endblock %}
+{% block meta_description %}This is the website of Dr. John Elder DMD the greatest dentist who ever dentisted!{% endblock %}
+
+{% block content %}
+
+
+
+  <!-- ***** Breadcrumb Area Start ***** -->
+  <div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg-img/12.jpg' %});">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-12">
+          <h2 class="title">Новини</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="breadcumb--con">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#"><i class="fa fa-home"></i>Головна</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Новини</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Breadcrumb Area End ***** -->
+
+
+  <div class="container">
+    <div class="alert alert-light">
+      <a href="{% url 'blog' %}"> Вернеться назад</a>
+      <h2>{{ object.title }}</h2>
+      <p>{{ object.text|safe }}</p>
+      <div class=row>
+        <div>
+          {% if object.avtor.profile.img %}
+            <img src="{{ object.avtor.profile.img.url }}" alt="{{ object.avtor }}" class="user_image">
+          {% else %}
+             <img src="media/default.jpg" alt="{{ object.avtor }}" class="user_image">
+          {% endif %}
+        </div>
+        <div class="mt-2">
+          <span class="text-muted"> <b>Дата:</b> {{ object.date|date:"d E Y в H:i"  }}</span>
+          <p><b>Автор: </b><a href="{% url 'user-news' object.avtor %}">{{ object.avtor }}</a></p>
+        </div>
+      </div>
+      {% if object.avtor == user %}
+      <hr>
+      <a href="{% url 'news-update' object.id %}" class="btn btn-info">Обновить пост</a>
+      <a href="{% url 'news-delete' object.id %}" class="btn btn-danger">Удалить пост</a>
+      {% endif %}
+    </div>
+  </div>
+
+
+<!--{% block aside_news_section %}-->
+<!--    <h5><b>10 фильмов про спорт</b></h5>-->
+<!--    <img src="http://fitnessguide.pro/wp-content/uploads/bfi_thumb/49-mwh9zkbd858myg1m94e9khs7fet1k2olfc3uw2xwck.jpg" class="img-thumbnail md-1">-->
+<!--    <p> Ничто так не закаляет силу духа и волю к победе, как спорт. Именно там царят нешуточные страсти и мощные конфликты, поэтому с самого начала ...-->
+<!--    </p>-->
+<!--    <a href="" target="_blank">-->
+<!--        <button class="btn btn-warning">Посмотреть</button>-->
+<!--    </a>-->
+<!--{% endblock aside_news_section %}-->
+
+{% endblock %}
+

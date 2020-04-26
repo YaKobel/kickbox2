@@ -1,0 +1,253 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="{% block meta_description %}Луцька Міська Федирація Кікбосингу WAKO{% endblock %}">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>{% block title %}Луцк WAKO {% endblock %}</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="{% static 'website/img/core-img/log111.png' %}">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{% static 'website/css/style.css' %}">
+
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="preload-content">
+      <div id="dento-load"></div>
+    </div>
+  </div>
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area">
+    <!-- Top Header Area -->
+    <div class="top-header-area">
+      <div class="container h-100">
+        <div class="row h-100 align-items-center">
+          <!-- Top Content -->
+          <div class="col-6 col-md-9 col-lg-8">
+            <div class="top-header-content">
+              <a href="#" data-toggle="tooltip" data-placement="bottom" title="Відродження 22А, Волинська область, Луцьк, 43000"><i class="fa fa-map-marker"></i> <span>проспект Відродження 22А, Луцьк, Волинска Область </span></a>
+              <a href="#" data-toggle="tooltip" data-placement="bottom" title="kickboxua@gmail.com"><i class="fa fa-envelope"></i> <span>kickboxua@gmail.com</span></a>
+            </div>
+          </div>
+          <!-- Top Header Social Info -->
+          <div class="col-6 col-md-3 col-lg-4">
+            <div class="top-header-social-info text-right">
+              <a href="https://www.youtube.com/user/kickboxua" data-toggle="tooltip" data-placement="bottom" title="Youtube"><i class="fa fa-youtube"></i></a>
+              <a href="https://www.facebook.com/Audiobooks777" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>
+              <a href="https://www.instagram.com/ourfront1/ data-toggle="tooltip" data-placement="bottom" title="Instagram"><i class="fa fa-instagram"></i></a>
+              <a href="#" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a>
+              <a href="#" data-toggle="tooltip" data-placement="bottom" title="Google Plus"><i class="fa fa-google-plus"></i></a>
+              <a href="#" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Top Header End -->
+
+    <!-- Main Header Start -->
+    <div class="main-header-area">
+      <div class="classy-nav-container breakpoint-off">
+        <div class="container">
+          <!-- Classy Menu -->
+          <nav class="classy-navbar justify-content-between" id="dentoNav">
+
+            <!-- Logo -->
+            <a class="nav-brand" href="{% url 'home' %}"><img src="{% static 'website/img/core-img/logo.png' %}" alt=""></a>
+
+            <!-- Navbar Toggler -->
+            <div class="classy-navbar-toggler">
+              <span class="navbarToggler"><span></span><span></span><span></span></span>
+            </div>
+
+            <!-- Menu -->
+            <div class="classy-menu">
+
+              <!-- Close Button -->
+              <div class="classycloseIcon">
+                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+              </div>
+
+              <!-- Nav Start -->
+              <div class="classynav">
+                <ul id="nav">
+                  <li><a href="{% url 'home' %}">Головна</a></li>
+                  <li><a href="{% url 'about' %}">Про нас</a></li>
+                  <li><a href="{% url 'feder' %}">Федерація</a></li>
+                  <li><a href="{% url 'sport' %}">Спротсмени</a></li>
+                  <li><a href="{% url 'blog' %}">Новини</a></li>
+                  <li><a href="./contact.html">Контакти</a></li>
+
+<!--                  <li><a href="% url 'user' %">Войти</a></li>-->
+<!--                  <li><a href="% url 'reg' %">Регистрация</a></li>-->
+                </ul>
+              </div>
+              <!-- Nav End -->
+            </div>
+
+<!--            <div class="navbar-nav">-->
+<!--            {% if user.is_authenticated %}-->
+<!--&lt;!&ndash;                <a href="#" class="btn btn-outline-secondary mr-2">Добавить статью</a>&ndash;&gt;-->
+<!--                <a href="{% url 'profile' %}" class="btn btn-outline-secondary">Профиль</a>-->
+<!--                <a href="{% url 'exit' %}" class="btn btn-outline-secondary">Выход</a>-->
+
+<!--            {% else %}-->
+<!--                <a href="{% url 'reg' %}" class="btn btn-outline-secondary">Регистрация</a>-->
+<!--                <a href="{% url 'user' %}" class="btn btn-outline-secondary">Войти</a>-->
+<!--            {% endif %}-->
+<!--            </div>-->
+
+<!--             Booking Now Button-->
+            <a href="https://photos.app.goo.gl/Lxtc7eTQ55jKwJS86" class="btn dento-btn booking-btn">Фотогалерея</a>
+
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div>
+    {% block content %}
+
+    {% endblock %}
+  </div>
+
+
+
+
+
+ <!-- ***** Footer Area Start ***** -->
+  <footer class="footer-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg-img/3.jpg' %});">
+    <div class="container">
+      <div class="row">
+        <!-- Single Footer Widget -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="single-footer-widget">
+            <a href="./index.html" class="d-block mb-4"><img src="{% static 'website/img/core-img/logo3.png' %}" alt=""></a>
+<!--            <p>Луцька Міська Федирація Кікбосингу WAKO</p>-->
+<!--            <div class="footer-contact">-->
+<!--              <p><i class="icon_pin"></i> проспект Відродження, 22А, Луцьк, Волынская, 43000</p>-->
+<!--              <p><i class="icon_phone"></i> +38095 1122 122</p>-->
+<!--              <p><i class="icon_mail"></i> kickboxua@gmail.com</p>-->
+<!--            </div>-->
+          </div>
+        </div>
+
+        <!-- Single Footer Widget -->
+        <div class="col-12 col-sm-6 col-lg">
+          <div class="single-footer-widget">
+            <!-- Widget Title -->
+            <h5 class="widget-title">Час Роботи</h5>
+
+            <!-- Opening Hours -->
+            <ul class="opening-hours">
+              <li><span>Пон-Пят</span> <span>10.00-21.00</span></li>
+              <li><span>Субота</span> <span>10.00-17.00</span></li>
+              <li><span>Неділя</span> <span>Вихідний</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Single Footer Widget -->
+        <div class="col-12 col-sm-6 col-lg">
+          <div class="single-footer-widget">
+            <!-- Widget Title -->
+            <h5 class="widget-title">Адрес</h5>
+
+            <!-- Quick Links Nav -->
+            <nav>
+              <div class="footer-contact">
+                <p><i class="icon_pin"></i> пр. Відродження 22А, Луцьк, Волынская, 43000</p>
+                <p><i class="icon_phone"></i> +38095 1122 122</p>
+                <p><i class="icon_mail"></i> kickboxua@gmail.com</p>
+              </div>
+
+
+<!--              <ul class="quick-links">-->
+<!--                <li><a href="#">About</a></li>-->
+<!--                <li><a href="#">FAQs</a></li>-->
+<!--                <li><a href="#">Contact</a></li>-->
+<!--                <li><a href="#">Policy</a></li>-->
+<!--                <li><a href="#">News</a></li>-->
+<!--                <li><a href="#">Advisors</a></li>-->
+<!--                <li><a href="#">Careers</a></li>-->
+<!--                <li><a href="#">Dentist</a></li>-->
+<!--                <li><a href="#">Services</a></li>-->
+<!--                <li><a href="#">Legals</a></li>-->
+<!--              </ul>-->
+            </nav>
+          </div>
+        </div>
+
+        <!-- Single Footer Widget -->
+        <div class="col-12 col-sm-6 col-lg">
+          <div class="single-footer-widget">
+            <!-- Widget Title -->
+            <h5 class="widget-title">Звязок</h5>
+
+<!--            <p>Пишіть лист</p>-->
+            <!-- Newsletter Form -->
+            <div class="footer-newsletter-form">
+              <form action="#" method="post">
+                <input type="email" name="nl-email" value="" placeholder="Email Address">
+                <button type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+              </form>
+            </div>
+
+            <!-- Social Info -->
+            <div class="footer-social-info">
+              <a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a>
+              <a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a>
+              <a href="#" data-toggle="tooltip" data-placement="top" title="Google Plus"><i class="fa fa-google-plus"></i></a>
+              <a href="#" data-toggle="tooltip" data-placement="top" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+              <a href="#" data-toggle="tooltip" data-placement="top" title="Pinterest"><i class="fa fa-pinterest"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copywrite Area -->
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="copywrite-content">
+            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy; 2005-<script>document.write(new Date().getFullYear());</script> Луцька Міська Федирація Кікбосингу WAKO <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="" target="_blank">Admin :)</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- ***** Footer Area End ***** -->
+
+  <!-- ******* All JS ******* -->
+  <!-- jQuery js -->
+  <script src="{% static 'website/js/jquery.min.js' %}"></script>
+  <!-- Popper js -->
+  <script src="{% static 'website/js/popper.min.js' %}"></script>
+  <!-- Bootstrap js -->
+  <script src="{% static 'website/js/bootstrap.min.js' %}"></script>
+  <!-- All js -->
+  <script src="{% static 'website/js/dento.bundle.js' %}"></script>
+  <!-- Active js -->
+  <script src="{% static 'website/js/default-assets/active.js' %}"></script>
+
+</body>
+
+</html>

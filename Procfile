@@ -1,0 +1,1 @@
+web: gunicorn kickbox.wsgi --log-file -
