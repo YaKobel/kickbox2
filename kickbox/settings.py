@@ -130,7 +130,7 @@ if os.getcwd() == '/app':
 
     #Allow all host headers
     ALLOWED_HOSTS = ['uakickbox.herokuapp.com']
-    DEBUG = False
+    DEBUG = True
 
     #Static asset configuration
     BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
