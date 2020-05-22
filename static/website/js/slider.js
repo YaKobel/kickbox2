@@ -31,7 +31,7 @@ var slideShow = (function () {
     }
 
     // наполнение массива _itemsArray
-    for (var i = 0, length = _sliderItems.length; i < length; i++) {
+    for (var i = 0; i < _sliderItems.length; i++) {
       _itemsArray.push({ item: _sliderItems[i], position: i, transform: 0 });
     }
 
@@ -39,7 +39,7 @@ var slideShow = (function () {
     var position = {
       getItemIndex: function (mode) {
         var index = 0;
-        for (var i = 0, length = _itemsArray.length; i < length; i++) {
+        for (var i = 0; i < _itemsArray.length; i++) {
           if ((_itemsArray[i].position < _itemsArray[index].position && mode === 'min') || (_itemsArray[i].position > _itemsArray[index].position && mode === 'max')) {
             index = i;
           }
@@ -115,7 +115,7 @@ var slideShow = (function () {
     var _addIndicators = function () {
       var indicatorsContainer = document.createElement('ol');
       indicatorsContainer.classList.add('slider__indicators');
-      for (var i = 0, length = _sliderItems.length; i < length; i++) {
+      for (var i = 0; i < _sliderItems.length; i++) {
         var sliderIndicatorsItem = document.createElement('li');
         if (i === 0) {
           sliderIndicatorsItem.classList.add('active');
@@ -133,28 +133,6 @@ var slideShow = (function () {
 
     // функция, осуществляющая установку обработчиков для событий
     var _setUpListeners = function () {
-      var _startX = 0;
-      if (_isTouchDevice()) {
-        _slider.addEventListener('touchstart', function (e) {
-          _startX = e.changedTouches[0].clientX;
-          _startAutoplay();
-        });
-        _slider.addEventListener('touchend', function (e) {
-          var
-            _endX = e.changedTouches[0].clientX,
-            _deltaX = _endX - _startX;
-          if (_deltaX > _stepTouch) {
-            _move('prev');
-          } else if (_deltaX < -_stepTouch) {
-            _move('next');
-          }
-          _startAutoplay();
-        });
-      } else {
-        for (var i = 0, length = _sliderControls.length; i < length; i++) {
-          _sliderControls[i].classList.add('slider__control_show');
-        }
-      }
       _slider.addEventListener('click', function (e) {
         if (e.target.classList.contains('slider__control')) {
           e.preventDefault();
@@ -213,6 +191,15 @@ var slideShow = (function () {
   }
 }());
 
-slideShow('.slider', {
-  isAutoplay: true
-});
+// slideShow('.slider', {
+//   isAutoplay: true
+
+    slideShow('#slider-1', {
+      isAutoplay: true
+    });
+
+    slideShow('#slider-2', {
+      isAutoplay: true
+    });
+
+// });

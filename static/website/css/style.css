@@ -1567,12 +1567,11 @@ ul {
 
 
 /*Super slider!*/
-
 /* стили основного контейнера слайдера */
 .slider {
   position: relative;
   overflow: hidden;
-  max-width: 600px;
+  max-width: 1250px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1591,6 +1590,7 @@ ul {
 
 /* стили для слайдов */
 .slider__item {
+  position: relative;
   flex: 0 0 100%;
   max-width: 100%;
 }
@@ -1599,7 +1599,7 @@ ul {
 .slider__control {
   position: absolute;
   top: 50%;
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: center;
   width: 40px;
@@ -1611,9 +1611,9 @@ ul {
   background: rgba(0, 0, 0, 0.5);
 }
 
-.slider__control_show {
-  display: flex;
-}
+/*.slider__control_show {*/
+/*  display: flex;*/
+/*}*/
 
 .slider__control:hover,
 .slider__control:focus {
@@ -1682,4 +1682,10 @@ ul {
 
 .slider__indicators li.active {
   background-color: #fff;
+}
+
+img {
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
 }
